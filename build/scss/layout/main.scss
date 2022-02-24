@@ -1,0 +1,20 @@
+.region-content-two {
+  .block {
+    margin-bottom: theme('margin.8');
+
+    @screen md {
+      padding-left: theme('padding.8');
+      padding-right: theme('padding.8');
+      margin-bottom: 0;
+
+      &:first-child {
+        padding-right: theme('padding.4');
+      }
+
+      &:last-child {
+        padding-left: theme('padding.4');
+      }
+    }
+  }
+
+}

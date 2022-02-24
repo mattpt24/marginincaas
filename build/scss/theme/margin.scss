@@ -1,0 +1,616 @@
+/*  Fonts
+/* 
+-------------------------------------------------------------------------- */
+
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.burger-icon {
+position: absolute;
+top: 0;
+left: -10px;
+}
+
+
+.dropdown-container {
+  transition: all 0.6s ease-in-out;
+  height: 100vh;
+  width: 70vw;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-evenly; 
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transform: translateX(-70vw);
+  pointer-events: none;
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: #d90429;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+    background: none;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    li, a {
+      transition: all .5s ease;
+      color: #3a3a3a;
+      padding: 20px 0;
+    }
+
+    .contact {
+      color: #d90429; 
+    }
+  }
+}
+
+.dropdown-active {
+  transition: all 0.6s ease-in-out;
+  transform: translateX(0);
+  pointer-events: all;
+  box-shadow: 0 0 10px #D31735;
+}
+
+#navbar {
+  background: (255, 255, 255, 0.9);
+  padding: 10px;
+  position: fixed; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+}
+
+.navbar-active {
+  transition: all .4s ease;
+  background: rgba(211, 23, 53, 0.9);
+  backdrop-filter: blur(8px);
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading,
+footer {
+  font-family: navigo, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+li, 
+a,
+p,
+.register-btn,
+div {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.register-btn {
+  transition: all .3s ease;
+  margin: 30px 0 90px 0;
+  border: solid 2px white;
+
+  
+   a {
+    color: #d90429;
+   }
+
+  &:hover {
+    transition: all .3s ease;
+    background: none;
+    border: solid 2px white;
+    cursor: pointer;
+  }
+
+  &:hover > a {
+    color: #ffffff;
+  }
+}
+
+.body {
+  font-family: poppins, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-link {
+  transition: all .3s ease;
+}
+
+
+.nav-link:hover {
+transition: all .3s ease;
+transform: translateY(-5px);
+color: rgb(255, 255, 255);
+}
+
+.login {
+  background: white; 
+  padding: 0.5rem 2rem;
+  color: #d90429; 
+
+  &:hover {
+    transition: all .3s ease;
+    color: #222;
+  }
+  }
+
+/*  Navigation
+/* -------------------------------------------------------------------------- */
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+}
+
+#mobile-button {
+  background: none;
+  color: white;
+  position: absolute;
+  outline: none;
+  border: none;
+  top: 20px;
+  right: 0;
+}
+
+.sticky-nav {
+  nav a {
+    color: theme('colors.gray.600');
+
+    &.text-gray-900 {
+      color: theme('colors.gray.900');
+    }
+  }
+}
+
+/*  Sections
+/* -------------------------------------------------------------------------- */
+
+.hero-area {
+  background: rgba(255, 255, 255, 1);
+  background-image: url('../../../dist/img/hero-bg-new.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &:before {
+    // Pseudo element will only render if it has a content property
+    content: '';
+    // Overlay should occupy the full width and height of parent image container
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    // Overlay background-color
+    background-color: #e21235;
+    // Overlay opacity, else overlay won't be transparent and show the image
+    opacity: 0.85;
+  }
+}
+
+.hero-content-container {
+  padding: 100px 0;
+}
+
+.hero-content-container {
+  @media screen and (max-width: 1025px) {
+  margin-top: 100px;
+  }
+
+  padding: 0;
+}
+
+
+// ABOUT SECTION
+
+#about {
+position: relative;
+height: auto;
+border-top: solid 3px #e21235;
+overflow: hidden;
+
+
+.about-text-container {
+  margin-bottom: 60px;
+}
+
+.about-wave {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  width: 100vw;
+
+  @media screen and (max-width: 1025px) {
+    display: none;
+  }
+}
+}
+
+
+.about-image {
+  border: solid 5px #e21235;
+  box-shadow: 5px 5px 0 #fd9cac;
+  border-radius: 5px;
+}
+
+
+
+ 
+
+// TO THE TOP BUTTON
+
+// .top-btn {
+//   position:fixed;
+//   bottom: 15px;
+//   right: 20px;
+//   background: #c70f2e; 
+//   padding: 10px;
+//   color: white; 
+//   border-radius: 10px;
+
+//   &:hover > .top-arrow {
+//     animation: hover 1s infinite;
+//     cursor: pointer;
+//   }
+
+//   a {
+//     color: white;
+//     text-decoration: none;
+//   }
+
+//   .top-arrow {
+//     font-size:20px;
+
+//     &:hover {
+//       animation: hover 1s infinite;
+//       cursor: pointer;
+//     }
+//   }
+
+// }
+
+@keyframes hover {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+
+/*  Animation
+/* -------------------------------------------------------------------------- */
+
+.tada-icon:hover {
+
+  .fa,
+  .fal,
+  .fas,
+  .fad {
+    animation: tada 1s infinite;
+  }
+}
+
+.headshake-icon:hover {
+
+  .fa,
+  .fal,
+  .fas,
+  .fad {
+    animation: headShake 1s infinite;
+  }
+}
+
+.rubberband-icon:hover {
+
+  .fa,
+  .fal,
+  .fas,
+  .fad {
+    animation: rubberBand 1s infinite;
+  }
+}
+
+.pulse-icon:hover {
+
+  .fa,
+  .fal,
+  .fas,
+  .fad {
+    animation: pulse 1s infinite;
+  }
+}
+
+.swing-icon:hover {
+
+  .fa,
+  .fal,
+  .fas,
+  .fad {
+    animation: swing 1s infinite;
+  }
+}
+
+
+// SPEAKER SECTION
+
+
+#speaker {
+  // background: rgb(236, 236, 236);
+  background: url("../../../dist/img/new-speakers-bg.png");
+  background-position: center center;
+
+  .speakers-intro-text-container { 
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-radius: 10px;
+    padding: 100px;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+
+    @media screen and (max-width: 500px) {
+      padding: 40px;
+      width: 90vw;
+    }
+  }
+
+  .speakers-container {
+    border: solid 4px white;
+    border-radius: 5px;
+
+    @media screen and (max-width: 500px) {
+      width: 80vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+
+
+// WSA
+
+#attending {
+  background: url("../../../dist/img/margin-in-caas-hero.jpg");
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  z-index: 0; 
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d90429;
+    opacity: 0.9;
+    z-index: -1;
+  }
+}
+
+
+
+
+// AGENDA
+
+
+
+.wsa-option {
+  transition: all .3s ease;
+}
+
+.wsa-option:hover {
+  transition: all 0.4s ease;
+  transform: scale(1.05);
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+
+// HOTEL IMAGE
+
+.hotel-image {
+  border: solid 5px #e21235;
+  box-shadow: 5px 5px 0 #fd9cac; 
+  border-radius: 5px;
+}
+
+.venue-link {
+  transition: all .3s ease;
+  color: #444e5f;
+  text-decoration:  none;
+  list-style: none;
+
+  &:hover {
+    transition: all .3s ease;
+    transform: scale(1.2);
+    color: #d90429;
+  }
+}
+
+
+header {
+  overflow: hidden;
+}
+
+
+
+
+// CTA
+
+.cta {
+  background: #e21235;
+}
+
+
+
+// CONTACT SOCIAL LINKS
+.contact-link {
+  color: #aab3c4;
+}
+
+
+
+.sponsor-tier {
+  background: #d90429;
+  color: white;
+  padding: 15px 0; 
+}
+
+.gold {
+  color: #242424;
+  border-radius: 5px;
+    transition: all .3s ease;
+    background: -webkit-linear-gradient(left, #be8a28, #FDE08D, #DF9F28);
+    background: linear-gradient(left, #be8a28, #FDE08D, #DF9F28);  
+    background-size: 300% 300%;
+    animation: gradient-move 7s infinite;
+}
+
+
+
+.silver {
+  transition: all .3s ease;
+  color: #242424;
+  border-radius: 5px;
+    transition: all .3s ease;
+    background: -webkit-linear-gradient(left, #8d8d8d, #e4e4e2, #969595);
+    background: linear-gradient(left, #8d8d8d, #e4e4e2, #969595); 
+    background-size: 300% 300%;
+    animation: gradient-move 7s infinite;
+} 
+
+
+
+.wave-svg {
+  pointer-events: none;
+}
+
+.hero-main-container {
+@media screen and (max-width: 500px) {
+  padding: 10px;
+}
+}
+
+
+.wildix-logo {
+  @media screen and (max-width: 500px) {
+    .wildix-logo {
+      width: 80vw;
+    }
+  }
+}
+
+
+// AGENDA
+
+
+
+.time {
+  transition: all 0.3s ease;
+  background: #e21235;
+  color: white;
+  width: 150px;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  position: relative;
+  bottom: 7px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 500px) {
+    margin-left: 15px;
+    text-align: center;
+    display: inline;
+  }
+
+  &:hover {
+    transition: all .3s ease;
+    background: #faa9b6;
+    color: #d90429;
+    cursor: pointer;
+  }
+
+
+}
+
+.dark-time {
+  background: lightgrey;
+  padding-top: 20px;
+}
+
+.agenda-item-container {
+  transition: all 0.3s ease;
+  border-radius: 5px;
+
+  @media screen and (max-width: 500px) {
+    padding: 20px 0;
+    line-height: 40px;
+  }
+}
+
+
+
+
+
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
