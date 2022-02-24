@@ -1,5 +1,4 @@
 node_modules
-dist/**/*
 **/*.mp4
 .htaccess
 .htpasswd

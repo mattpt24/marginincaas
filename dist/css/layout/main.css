@@ -1,0 +1,21 @@
+.region-content-two .block {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .region-content-two .block {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0;
+  }
+
+  .region-content-two .block:first-child {
+    padding-right: 1rem;
+  }
+
+  .region-content-two .block:last-child {
+    padding-left: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

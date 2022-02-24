@@ -1,0 +1,62 @@
+[{
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Simon Turton",
+    "url": "",
+    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGnn9FCKJyMWw/profile-displayphoto-shrink_200_200/0/1516266309940?e=1613606400&v=beta&t=Wd5sw2gEa8fVDjvVoeOpP-WJK51qE-pbW9KuqRVGpeE",
+    "sameAs": "https://www.linkedin.com/in/simon-turton-35aa19/",
+    "jobTitle": "Sales Director",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BPL Business Media"
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Nigel Sergent",
+    "url": "",
+    "image": "https://media-exp1.licdn.com/dms/image/C5603AQG7OZ6ga88T3w/profile-displayphoto-shrink_200_200/0/1559927442195?e=1613606400&v=beta&t=ue64AWPuH-Bw7h4oWn7u8_YnSwe1MItN705JOx-rlAc",
+    "sameAs": "https://www.linkedin.com/in/nigelsergent/",
+    "jobTitle": "Editorial Director",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BPL Business Media"
+    }
+  },
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "Rachel Seymour",
+    "url": "",
+    "image": "https://media-exp1.licdn.com/dms/image/C4D03AQGlMV-FMf0Fmg/profile-displayphoto-shrink_200_200/0/1567604541476?e=1613606400&v=beta&t=dAK4FLOs7drBdLq7IfMtWbWfGD-DKLO5Z2zRQSN7Ka0",
+    "sameAs": "https://www.linkedin.com/in/seymourrachel/",
+    "jobTitle": "Events & Operations Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "BPL Business Media"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Margin in Managed Services",
+    "description": "Margin in Managed Services will provide voice, data and mobile resellers with a range of valuable insights into how to shift towards or refine their managed services business model.",
+    "image": "https://www.img.com",
+    "startDate": "2021-07-08T09:00",
+    "endDate": "2021-07-08T18:00",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "location": {
+      "@type": "Place",
+      "name": "Forest of Arden Marriott Hotel",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maxstoke Lane",
+        "addressLocality": "Birmingham",
+        "postalCode": "CV7 7HR",
+        "addressCountry": "GB"
+      }
+    }
+  }
+]
